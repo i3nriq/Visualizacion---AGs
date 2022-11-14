@@ -1,147 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <table width="100%" alignt="left" position="absolute">
-      <colgroup>
-        <col style="width: 180px" />
-      </colgroup>
-      <thead>
-        <tr>
-          <td rowspan="4">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0LSU20JCX7v7iAIc0FrPRJOloXv20rr1ZRV2DE6IuDXZwVc5Vf9awP7-mfHQXQl7BSI&usqp=CAU"
-              alt="drawing"
-              style="width: 180px"
-            />
-          </td>
-          <td style="font-size: 12px">
-            <b>Universidad Internacional de Valencia</b>
-          </td>
-        </tr>
-        <tr>
-          <td style="font-size: 11px">
-            <b>Maestria en Big Data y Ciencia de Datos</b>
-          </td>
-        </tr>
-        <tr style="font-size: 10px">
-          <td>08MBID Visualización de Datos - 2022</td>
-        </tr>
-        <tr style="font-size: 10px">
-          <td>Enrique Abraham Magnani Quiñonez</td>
-        </tr>
-      </thead>
-    </table>
-
-    <h3>Portafolio de Actividades Guiadas</h3>
-    <table>
-      <tbody>
-        <tr>
-          <td class="url_titulo">URL:</td>
-          <td>
-            <a
-              href="https://js-i9jmlq.stackblitz.io/"
-              target="_blank"
-              class="url_tipo"
-              >https://js-i9jmlq.stackblitz.io/</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td class="url_titulo">Github:</td>
-          <td>
-            <a
-              href="https://github.com/i3nriq/08MBID--Visualizacion-de-Datos"
-              target="_blank"
-              class="url_tipo"
-              >https://github.com/i3nriq/08MBID--Visualizacion-de-Datos</a
-            >
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <br />
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'AG-1')"  id="defaultOpen">
-        Actividad 1
-      </button>
-      <button class="tablinks" onclick="openCity(event, 'AG-3')">
-        Actividad 3
-      </button>
-    </div>
-    <div id="AG-1" class="tabcontent">
-      <p class="titulo_grafico">
-        Adquisición de datos. Web-Scraping + Visualización
-      </p>
-      <div class="div_grafico">
-        <iframe
-          class="if_grafico"
-          seamless
-          frameborder="0"
-          scrolling="no"
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjpXgwo6LNzMwkBgLPZJUvjR1xm-6bl4ZQ1Of2vynH2tWixdjWTJm5Bto6evvlg1Bof7zutVx9HN54/pubchart?oid=1723123865&amp;format=interactive"
-        ></iframe>
-      </div>
-      <p class="titulo_grafico">Gráficos Combinados. Múltiples Variables</p>
-      <div class="div_grafico">
-        <iframe
-          class="if_grafico"
-          seamless
-          frameborder="0"
-          scrolling="no"
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjpXgwo6LNzMwkBgLPZJUvjR1xm-6bl4ZQ1Of2vynH2tWixdjWTJm5Bto6evvlg1Bof7zutVx9HN54/pubchart?oid=1906712382&amp;format=interactive"
-        ></iframe>
-      </div>
-      <p class="titulo_grafico">Diagrama de dispersión(Scatterplot)</p>
-      <div class="div_grafico">
-        <iframe
-          class="if_grafico"
-          title="Relación CO2 per Capita / Emisión Total"
-          aria-label="Diagrama de dispersión"
-          id="datawrapper-chart-u8ub0"
-          src="https://datawrapper.dwcdn.net/u8ub0/3/"
-          scrolling="no"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <p class="titulo_grafico">Gráficos de barras separando continentes</p>
-      <div class="div_grafico">
-        <iframe
-          class="if_grafico"
-          title="Top 10 Emisiones CO2 en 2021"
-          aria-label="Gráfica de barras"
-          id="datawrapper-chart-L9qxP"
-          src="https://datawrapper.dwcdn.net/L9qxP/1/"
-          scrolling="no"
-          frameborder="0"
-        ></iframe>
-      </div>
-    </div>
-
-    <div id="AG-3" class="tabcontent">
-      <form action="https://colab.research.google.com/drive/1UHku8vbX3QZzS9jyP4r6XUOQGqhdnYw2?usp=sharing" method="get" target="_blank">
-        <button class="btn warning"  type="submit">Google Colab</button>
-     </form>
-
- 
-    </div>
-    <script>
-      function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName('tabcontent');
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = 'none';
-        }
-        tablinks = document.getElementsByClassName('tablinks');
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(' active', '');
-        }
-        document.getElementById(cityName).style.display = 'block';
-        evt.currentTarget.className += ' active';
-      }
-      document.getElementById("defaultOpen").click();
-    </script>
-  </body>
+   <head>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.2/d3plus.full.min.js"></
+         script>
+         </head>
+           <body>
+             <table width="100%" alignt="left" position="absolute">
+               <colgroup>
+                 <col style="width: 180px" />
+               </colgroup>
+               <thead>
+                 <tr>
+                   <td rowspan="4">
+                     <img
+                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0LSU20JCX7v7iAIc0FrPRJOloXv20rr1ZRV2DE6IuDXZwVc5Vf9awP7-mfHQXQl7BSI&usqp=CAU"
+                       alt="drawing"
+                       style="width: 180px"
+                     />
+                   </td>
+                   <td style="font-size: 12px">
+                     <b>Universidad Internacional de Valencia</b>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td style="font-size: 11px">
+                     <b>Maestria en Big Data y Ciencia de Datos</b>
+                   </td>
+                 </tr>
+                 <tr style="font-size: 10px">
+                   <td>08MBID Visualización de Datos - 2022</td>
+                 </tr>
+                 <tr style="font-size: 10px">
+                   <td>Enrique Abraham Magnani Quiñonez</td>
+                 </tr>
+               </thead>
+             </table>
+         
+             <h3>Portafolio de Actividades Guiadas</h3>
+             <table>
+               <tbody>
+                 <tr>
+                   <td class="url_titulo">URL:</td>
+                   <td>
+                     <a
+                       href="https://js-i9jmlq.stackblitz.io/"
+                       target="_blank"
+                       class="url_tipo"
+                       >https://js-i9jmlq.stackblitz.io/</a
+                     >
+                   </td>
+                 </tr>
+                 <tr>
+                   <td class="url_titulo">Github:</td>
+                   <td>
+                     <a
+                       href="https://github.com/i3nriq/08MBID--Visualizacion-de-Datos"
+                       target="_blank"
+                       class="url_tipo"
+                       >https://github.com/i3nriq/08MBID--Visualizacion-de-Datos</a
+                     >
+                   </td>
+                 </tr>
+               </tbody>
+             </table>
+             <br />
+             <div class="tab">
+               <button class="tablinks" onclick="openCity(event, 'AG-1')"  id="defaultOpen">
+                 Actividad 1
+               </button>
+               <button class="tablinks" onclick="openCity(event, 'AG-3')">
+                 Actividad 3
+               </button>
+             </div>
+             <div id="AG-1" class="tabcontent">
+               <p class="titulo_grafico">
+                 Adquisición de datos. Web-Scraping + Visualización
+               </p>
+               <div class="div_grafico">
+                 <iframe
+                   class="if_grafico"
+                   seamless
+                   frameborder="0"
+                   scrolling="no"
+                   src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjpXgwo6LNzMwkBgLPZJUvjR1xm-6bl4ZQ1Of2vynH2tWixdjWTJm5Bto6evvlg1Bof7zutVx9HN54/pubchart?oid=1723123865&amp;format=interactive"
+                 ></iframe>
+               </div>
+               <p class="titulo_grafico">Gráficos Combinados. Múltiples Variables</p>
+               <div class="div_grafico">
+                 <iframe
+                   class="if_grafico"
+                   seamless
+                   frameborder="0"
+                   scrolling="no"
+                   src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjpXgwo6LNzMwkBgLPZJUvjR1xm-6bl4ZQ1Of2vynH2tWixdjWTJm5Bto6evvlg1Bof7zutVx9HN54/pubchart?oid=1906712382&amp;format=interactive"
+                 ></iframe>
+               </div>
+               <p class="titulo_grafico">Diagrama de dispersión(Scatterplot)</p>
+               <div class="div_grafico">
+                 <iframe
+                   class="if_grafico"
+                   title="Relación CO2 per Capita / Emisión Total"
+                   aria-label="Diagrama de dispersión"
+                   id="datawrapper-chart-u8ub0"
+                   src="https://datawrapper.dwcdn.net/u8ub0/3/"
+                   scrolling="no"
+                   frameborder="0"
+                 ></iframe>
+               </div>
+               <p class="titulo_grafico">Gráficos de barras separando continentes</p>
+               <div class="div_grafico">
+                 <iframe
+                   class="if_grafico"
+                   title="Top 10 Emisiones CO2 en 2021"
+                   aria-label="Gráfica de barras"
+                   id="datawrapper-chart-L9qxP"
+                   src="https://datawrapper.dwcdn.net/L9qxP/1/"
+                   scrolling="no"
+                   frameborder="0"
+                 ></iframe>
+               </div>
+             </div>
+         
+             <div id="AG-3" class="tabcontent">
+               <form action="https://colab.research.google.com/drive/1UHku8vbX3QZzS9jyP4r6XUOQGqhdnYw2?usp=sharing" method="get" target="_blank">
+                 <button class="btn warning"  type="submit">Google Colab</button>
+              </form>
+         
+              <h2> Gráfico de Columnas con D3Plus</h2>
+              <div id="viz1"></div>
+              <h2> Reutilizar código. Barras</h2>
+         <div id="viz2"></div>
+         <h2>Caja y Bigotes </h2>
+         <div id="viz3"></div>
+             </div>
+             <script>
+               function openCity(evt, cityName) {
+                 var i, tabcontent, tablinks;
+                 tabcontent = document.getElementsByClassName('tabcontent');
+                 for (i = 0; i < tabcontent.length; i++) {
+                   tabcontent[i].style.display = 'none';
+                 }
+                 tablinks = document.getElementsByClassName('tablinks');
+                 for (i = 0; i < tablinks.length; i++) {
+                   tablinks[i].className = tablinks[i].className.replace(' active', '');
+                 }
+                 document.getElementById(cityName).style.display = 'block';
+                 evt.currentTarget.className += ' active';
+               }
+               document.getElementById("defaultOpen").click();
+         
+         
+             
+      </script>
+      </body>
 </html>
