@@ -34,6 +34,12 @@ font-weight: 500;
   margin: 0 auto;
 }
 
+.div_texto {
+  width: 520px;
+  height: 40px;
+  margin: 0 auto;
+}
+
 .if_grafico {
   width: 520px;
   height: 400px;
