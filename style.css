@@ -10,6 +10,14 @@ h2 {
   font-size: medium;
   font-weight: 600;
 }
+.titulo_seccion {
+  margin-top: 50px;
+  text-align: center;
+  font-family: system-ui;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
 .url_tipo{
   font-size: 11px;
   margin-left: 10px;
