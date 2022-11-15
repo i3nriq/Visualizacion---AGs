@@ -111,9 +111,3 @@ body {
 .danger {color: red;}
 .default {color: black;}
 
-#viz1,#viz2,#viz3{
-  width: 80%;
-  height: 300px;
- 
- }
- 
