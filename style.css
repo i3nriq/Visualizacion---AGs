@@ -38,6 +38,8 @@ font-weight: 500;
   width: 520px;
   height: 120px;
   margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .if_grafico {
