@@ -51,6 +51,14 @@ font-weight: 500;
   background-color: #ffffffff;
 }
 
+.img_grafico{
+  width: 520px;
+  height: 400px;
+  margin: 10px;
+  display: block;
+  border-style: none;
+}
+
 body {
   background-color: #77777708;
 }
